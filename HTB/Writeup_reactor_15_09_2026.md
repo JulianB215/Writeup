@@ -6,12 +6,6 @@
 
 ---
 
-## Résumé
-
-La machine Reactor expose un serveur web Next.js 15.0.3 vulnérable à la CVE-2025-55182, une faille critique (CVSS 10.0) permettant l'exécution de code à distance sans authentification via le mécanisme de désérialisation des React Server Components. L'exploitation donne un accès initial en tant qu'utilisateur `node`, puis une base de données SQLite exposée fournit les identifiants permettant de se connecter en tant qu'`engineer`. La montée en privilèges vers `root` s'effectue via le débogueur Node.js (port 9229) qui tourne en tant que root sur l'interface localhost.
-
----
-
 ## 1. Reconnaissance
 
 ### Scan de ports
